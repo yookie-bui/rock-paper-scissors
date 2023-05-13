@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section id="header">
+            <h1>Rock Paper Scissors</h1>
+            <div id="score-board">
+                <h2>First To </h3>
+                <select name="scores" id="scores-select" style="margin-left: 5px; margin-right: 5px;">
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="10">10</option>
+                </select>
+                <h2> Wins Game!</h3>
+            </div>
+        </section>
+        <section id="score-display">
+            <div class="score">
+                <h4>Player Scores</h4>
+                <h5 id="player-score">0</h5>
+            </div>
+            <div class="score">
+                <h4>Computer Scores</h4>
+                <h5 id = "computer-score">0</h5>
+            </div>
+        </section>
+        <section id="playground">
+            <div id="weapon-display">
+                <div class="weapon" id="player-weapon" style="margin-left: 0.8em;"></div>
+                <h3 style="margin: 0px;" id="game-text">Get Your Weapon</h3>
+                <div class="weapon" id ="computer-weapon" style="margin-right: 0.8em;"></div>
+            </div>
+            <div id="buttons">
+                <button type="button" value="Rock">Rock</button>
+                <button type="button" value="Paper">Paper</button>
+                <button type="button" value="Scissors">Scissors</button>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
